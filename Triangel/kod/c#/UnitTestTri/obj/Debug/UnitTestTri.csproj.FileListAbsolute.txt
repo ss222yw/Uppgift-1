@@ -1,0 +1,14 @@
+F:\UnitTestTri\bin\Debug\UnitTestTri.dll
+F:\UnitTestTri\bin\Debug\UnitTestTri.pdb
+F:\UnitTestTri\bin\Debug\tri.exe
+F:\UnitTestTri\bin\Debug\tri.pdb
+F:\UnitTestTri\obj\Debug\UnitTestTri.csprojResolveAssemblyReference.cache
+F:\UnitTestTri\obj\Debug\UnitTestTri.dll
+F:\UnitTestTri\obj\Debug\UnitTestTri.pdb
+E:\UnitTestTri\bin\Debug\UnitTestTri.dll
+E:\UnitTestTri\bin\Debug\UnitTestTri.pdb
+E:\UnitTestTri\bin\Debug\tri.exe
+E:\UnitTestTri\bin\Debug\tri.pdb
+E:\UnitTestTri\obj\Debug\UnitTestTri.csprojResolveAssemblyReference.cache
+E:\UnitTestTri\obj\Debug\UnitTestTri.dll
+E:\UnitTestTri\obj\Debug\UnitTestTri.pdb
