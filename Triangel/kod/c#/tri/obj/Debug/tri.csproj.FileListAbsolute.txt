@@ -1,0 +1,9 @@
+F:\tri\bin\Debug\tri.exe.config
+F:\tri\bin\Debug\tri.exe
+F:\tri\bin\Debug\tri.pdb
+F:\tri\obj\Debug\tri.csprojResolveAssemblyReference.cache
+F:\tri\obj\Debug\tri.exe
+F:\tri\obj\Debug\tri.pdb
+E:\tri\bin\Debug\tri.exe.config
+E:\tri\obj\Debug\tri.exe
+E:\tri\obj\Debug\tri.pdb
