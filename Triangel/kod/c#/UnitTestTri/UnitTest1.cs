@@ -7,6 +7,39 @@ namespace UnitTestTri
     public class TriangleUnitTest
     {
         [TestMethod]
+        public void isIsoscelesthreeDoubles()
+        {
+            Triangle tri2 = new Triangle(4.1, 4.1, 6.0);
+            Assert.IsTrue(tri2.isIsosceles());
+        }
+        [TestMethod]
+        public void isIsoscelesDoubleArray()
+        {
+            Triangle tri2 = new Triangle(new double [] {4.1, 4.1, 6.0});
+            Assert.IsTrue(tri2.isIsosceles());
+        }
+        [TestMethod]
+        public void isIsoscelespoint()
+        {
+            Point a = new Point(10,11);
+            Point b = new Point(12,13);
+            Point c = new Point(14,15);
+            Triangle tri2 = new Triangle(a,b,c);
+            Assert.IsTrue(tri2.isIsosceles());
+            
+        }
+        [TestMethod]
+        public void isIsoscelespointArray()
+        {
+            Point a = new Point(10, 11);
+            Point b = new Point(12, 13);
+            Point c = new Point(14, 15);
+            Triangle tri2 = new Triangle(new Point[] { a,b,c });
+            Assert.IsTrue(tri2.isIsosceles());
+
+        }
+
+        [TestMethod]
         public void EnLikbentTriangleTRUE()
         {
             Triangle tri2 = new Triangle(4.1, 4.1, 6.0);//Test för att se ifall det är true att det är en likbent triangle.
@@ -21,13 +54,13 @@ namespace UnitTestTri
         [TestMethod]
         public void EnLikbentTriangleFALSE()
         {
-            Triangle tri2B = new Triangle(4.1, 4.1, 6.0);//Test för att se ifall det är false att det är en likbent triangle.
+            Triangle tri2B = new Triangle(4.1, 4.5, 6.0);//Test för att se ifall det är false att det är en likbent triangle.
             Assert.IsFalse(tri2B.isIsosceles());
         }
         [TestMethod]
         public void EnLikbentTriangleFalse()
         {
-            Triangle tri2C = new Triangle(3.0, 3.0, 2.0);//Test för att se ifall det är true att det är en likbent triangle.
+            Triangle tri2C = new Triangle(3.0, 5.0, 2.0);//Test för att se ifall det är true att det är en likbent triangle.
             Assert.IsFalse(tri2C.isIsosceles());
         }
         [TestMethod]
@@ -45,19 +78,19 @@ namespace UnitTestTri
         [TestMethod]
         public void EnLiksidigTriangleFALSE()
         {
-            Triangle triB = new Triangle(2.0, 2.0, 2.0);//Test för att se ifall det är false att det är en liksidig triangle.
+            Triangle triB = new Triangle(2.0, 2.0, 3.0);//Test för att se ifall det är false att det är en liksidig triangle.
             Assert.IsFalse(triB.isEquilateral());
         }
         [TestMethod]
         public void EnLiksidigTriangleFalse()
         {
-            Triangle triC = new Triangle(9.9, 9.9, 9.9);//Test för att se ifall det är false att det är en liksidig triangle.
+            Triangle triC = new Triangle(9.9, 9.9, 11.9);//Test för att se ifall det är false att det är en liksidig triangle.
             Assert.IsFalse(triC.isEquilateral());
         }
         [TestMethod]
         public void EnLiksidigTriangleTrue1()
         {
-            Triangle triD = new Triangle(2.0, 1.4, 1.5); //Test för att se ifall det är tru att det är en liksidig triangle.
+            Triangle triD = new Triangle(2.0, 2.0, 2.0); //Test för att se ifall det är tru att det är en liksidig triangle.
             Assert.IsTrue(triD.isEquilateral());
         }
         [TestMethod]
@@ -75,13 +108,13 @@ namespace UnitTestTri
         [TestMethod]
         public void EnTriangleSomHarIngenLikaSidorFALSE()
         {
-            Triangle tri3B = new Triangle(2.0, 3.0, 4.0);//Test för att se ifall det är false att det är en triangle som har inte några lika sidor.
+            Triangle tri3B = new Triangle(4.0, 4.0, 4.0);//Test för att se ifall det är false att det är en triangle som har inte några lika sidor.
             Assert.IsFalse(tri3B.isScalene());
         }
         [TestMethod]
-        public void EnTriangleSomHarIngenLikaSidorTrue1()
+        public void EnTriangleSomHarIngenLikaSidorFalse1()
         {
-            Triangle tri3C = new Triangle(2.3, 4.1, 1.0);//Test för att se ifall det är false att det är en triangle som har inte några lika sidor.
+            Triangle tri3C = new Triangle(2.3, 2.3, 2.3);//Test för att se ifall det är false att det är en triangle som har inte några lika sidor.
             Assert.IsFalse(tri3C.isScalene());
         }
         [TestMethod]
